@@ -307,13 +307,16 @@ h3 {
 
 /*------Blog-----*/
 .blog {
-  background: black;
+  background: url("images/moons.jpg");
   background-attachment: fixed;
   background-position: center;
   width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
+}
+.blog p {
+  color: #fff;
 }
 .blog-col {
   flex-basis: 31%;
@@ -591,4 +594,89 @@ comment-form textarea {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/*---------home page---------*/
+
+.services-main {
+  width: 100%;
+  min-height: 100vh; /* Fill the viewport height */
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("images/moons.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+.services-main h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 30px; /* Center vertically */
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-block {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 30px 20px;
+  flex: 1;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 220px;
+}
+
+.service-block h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.service-block p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Responsive: stack blocks on mobile */
+@media (max-width: 700px) {
+  .services-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.explore-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.explore-btn {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  color: #4f3b78;
+  border: 1px solid #4f3b78;
+  padding: 12px 34px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: static;
+  text-decoration: none;
+}
+
+.explore-btn:hover {
+  background: #4f3b78;
+  color: #fff;
 }
