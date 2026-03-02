@@ -258,6 +258,10 @@ h3 {
   width: 100%;
   display: block;
 }
+
+.Terms-conditions {
+  color: #fff;
+}
 .contact-button {
   display: inline-block;
   text-decoration: none;
