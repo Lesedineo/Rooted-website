@@ -250,7 +250,8 @@ h3 {
   position: relative;
   overflow: hidden;
   border: 1px solid white;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.062);
+  backdrop-filter: blur(8px);
   color: peachpuff;
 }
 .price-col img {
@@ -426,7 +427,8 @@ h3 {
 .sub-header {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  background-image:
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("images/constilation.jpg");
   background-position: center;
   background-size: cover;
@@ -629,7 +631,8 @@ comment-form textarea {
 .services-main {
   width: 100%;
   min-height: 100vh; /* Fill the viewport height */
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  background-image:
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("images/moons.jpg");
   background-position: center;
   background-size: cover;
@@ -697,7 +700,9 @@ comment-form textarea {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
   display: inline-block;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   position: static;
