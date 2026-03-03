@@ -591,6 +591,9 @@ comment-form textarea {
 .contact-col div p {
   padding: 0;
 }
+.contact-col a {
+  color: #555;
+}
 .contact-col div h5 {
   font-size: 20px;
   margin-bottom: 5px;
